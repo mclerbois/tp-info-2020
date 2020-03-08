@@ -1,0 +1,41 @@
+body {
+  background-image: url("../images/montagne.jpg"); /* donner le chemin % au fichier css */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.center {
+  text-align: center;
+}
+
+.imgProduit {
+  width: 70%;
+  height: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.selectAndBuy {
+  background-color: rgba(207, 198, 171, 0.9);
+}
+
+.leftButton {
+  transform: scale(0.5) rotate(-90deg);
+}
+
+.rightButton {
+  transform: scale(0.5) rotate(90deg);
+}
+
+.pad1 {
+  padding: 1em;
+}
+
+.padl2 {
+  padding-left: 2em;
+}
+.padl5 {
+  padding-left: 5em;
+}

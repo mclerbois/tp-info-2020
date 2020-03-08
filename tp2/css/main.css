@@ -1,0 +1,54 @@
+/* Image de fond de la page*/
+body {
+  background-image: url("../../images/islandinthesun.jpg"); /* donner le chemin % au fichier css */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* pour les éléments que l'on doit centrer */
+.center {
+  text-align: center;
+}
+
+/* Style pour l'image du produit */
+.imgProduit {
+  width: 70%;
+  height: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* style de la zone d'affichage de la quantité, du prix et du bouton d'achat */
+.selectAndBuy {
+  background-color: rgba(207, 198, 171, 0.9);
+}
+
+/* style du bouton se trouvant à gauche */
+.leftButton {
+  transform: scale(0.5) rotate(-90deg);
+}
+
+/* style du bouton se trouvant à droite */
+.rightButton {
+  transform: scale(0.5) rotate(90deg);
+}
+
+/* espacement de 1 em
+em 	Relative to the font-size of the element (2em means 2 times the size of the current font)
+https://www.w3schools.com/cssref/css_units.asp
+*/
+.pad1 {
+  padding: 1em;
+}
+/* espacement de 2em*/
+.padl2 {
+  padding-left: 2em;
+}
+/* espacement de 5em */
+.padl5 {
+  padding-left: 5em;
+}
+
+/* Créer deux styles supplémentaires pour des espacements de 3 et 4 em.*/

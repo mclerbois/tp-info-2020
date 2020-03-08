@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Techniques informatiques - base de données - TP2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/tooltip.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <!-- Ajout de la librairie javascript jquery-->
+    <script src="../js/jquery/jquery-3.4.1.min.js"></script>
+
+    <!-- fichier contenant le code javascript que nous devons créer -->
+    <script src="js/main.js"></script>
+  </head>
+
+  <!-- 
+    lorsque la page est complétement lue (onload), on exécute la fonction setup() se trouvant dans le fichier main.js 
+  -->
+  <body onload="setup();">
+    <div class="center">
+      <h1 id="productDesignation">No product</h1>
+      <div class="tooltip">
+        <span class="pad1">
+          <img src="../images/img1a.jpg" alt="" class="imgProduit" />
+        </span>
+        <span class="tooltiptext" id="productInfo"></span>
+      </div>
+
+      <div class="selectAndBuy">
+        <div class="tooltip">
+          <span class="pad1"
+            ><img src="../images/button9.png" class="leftButton"
+          /></span>
+          <span class="tooltiptext">Produit précédent</span>
+        </div>
+
+        <span class="padl2">Quantité disponible: </span>
+        <span class="pad1">0</span>
+        <span class="padl5">Prix: </span>
+        <span class="pad1">0£</span>
+
+        <div class="tooltip">
+          <span class="pad1"
+            ><img src="../images/button9.png" class="rightButton"
+            onclick="selectNextProduct();"
+            <!-- 
+              exemple, comment gérer l'action sur un bouton , événement onclick provoquera l'appel de la fonction selectNextProduct()
+            -->
+            /></span
+          >
+          <span class="tooltiptext">Produit suivant</span>
+        </div>
+        <p></p>
+        <div class="center">
+          <div class="tooltip">
+            <button onclick="alert('la fonction acheter est vide');">
+              Acheter
+            </button>
+            <span class="tooltiptext"
+              >Le bouton pour acheter un produit disponible</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

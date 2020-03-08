@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Techniques informatiques - base de données - TP1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <!-- 
+      Style nécessaire pour afficher des messages (tooltip) lorsque le curseur de la souris est sur une image, 
+      un bouton ...
+
+      source: https://www.w3schools.com/css/css_tooltip.asp
+    -->
+    <style>
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: auto;
+        background-color: rgb(66, 44, 165);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        margin-left: -60px;
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+    </style>
+  </head>
+
+  <!-- Définit que le corps de la page contiendra une image non répétées et couvrant toute la fenêtre visible. -->
+  <body
+    style="background-image: url('../images/islandinthesun.jpg');background-repeat: no-repeat;background-attachment: fixed;
+    background-size: cover;"
+  >
+    <!-- div principal, définir une zone (div) dans laquelle les éléments seront centrés -->
+    <div style="text-align:center;">
+      <!-- Placer la désignation du produit via un élément h1 -->
+      <h1>Lotus Mini Gaufre Suzy 28.5gr</h1>
+
+      <!-- 
+        zone (div) contenant l'image du produit et des informations sur celui-ci visible lorsque le curseur de la souris
+        se trouve dans le rectangle de l'image
+      -->
+      <div class="tooltip">
+        <!-- zone (span) pour l'image -->
+        <span style="padding: 1em;">
+          <img
+            src="../images/img1.jpg"
+            alt="Lotus Mini Gaufre Suzy 28.5gr"
+            style="width:70%; height:70%; display: block;
+        margin-left: auto;
+        margin-right: auto "
+          />
+        </span>
+        <!-- 
+          zone (span) pour la description du produit, visible uniquement lorsque le curseur de la souris se trouve 
+          dans le rectangle de l'image
+        -->
+        <span class="tooltiptext"
+          >Farine de blé, sucre 21%, huiles végétales (palme*, colza), sirop de
+          glucose-fructose, oeufs de poules élevées au sol, levure, émulsifiants
+          (mono- et diglycérides d'acides gras, stéaroyl-2-lactylate de sodium,
+          lécithine de soja), sel, arôme, *Huile de palme issue de plantations
+          durables et certifiées</span
+        >
+      </div>
+
+      <!-- zone (div) pour placer la quantité, le prix, et les boutons qui permettront de changer de produit-->
+      <div style="background-color: rgba(207, 198, 171, 0.9);">
+        <div class="tooltip">
+          <!-- bouton se trouvant à gauche -->
+          <span style="padding: 1em;"
+            ><img
+              src="../images/button9.png"
+              alt="previous"
+              style="transform:scale(0.5) rotate(-90deg);display: display-box;"
+          /></span>
+          <span class="tooltiptext">Produit précédent</span>
+        </div>
+        <!-- quantité, prix -->
+        <span style="padding-left:2em;">Quantité disponible: </span>
+        <span style="padding:1em;">25</span>
+        <span style="padding-left:5em;">Prix: </span>
+        <span style="padding:1em;">1€</span>
+
+        <div class="tooltip">
+          <!-- bouton se trouvant à droite -->
+          <span style="padding: 1em;"
+            ><img
+              src="../images/button9.png"
+              alt="previous"
+              style="transform:scale(0.5) rotate(90deg);display: display-box;"
+          /></span>
+          <span class="tooltiptext">Produit suivant</span>
+        </div>
+
+        <p></p>
+        <!-- Bouton pour acheter le produit -->
+        <div style="text-align:center">
+          <div class="tooltip">
+            <button>Acheter</button>
+            <span class="tooltiptext"
+              >Le bouton pour acheter un produit disponible</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin du div principal-->
+  </body>
+</html>
